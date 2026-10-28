@@ -37,9 +37,12 @@ def save_history(history):
 def process_one(name, html_path, history, dry_run=False):
     slug = os.path.splitext(name)[0]
     print(f"ENGINE: {name}")
-    frames_dir, duration, fps, total = render_reel.render_frames(html_path, slug)
-    silent = os.path.join(config.OUTPUT_DIR, f"{slug}-silent.mp4")
-    render_reel.frames_to_silent_mp4(frames_dir, fps, silent)
+    if render_reel.has_contract(html_path):
+        frames_dir, duration, fps, total = render_reel.render_frames(html_path, slug)
+        silent = os.path.join(config.OUTPUT_DIR, f"{slug}-silent.mp4")
+        render_reel.frames_to_silent_mp4(frames_dir, fps, silent)
+    else:
+        silent, duration, fps = render_reel.render_realtime(html_path, slug)
 
     import drive_fetch as df
 
@@ -62,7 +65,11 @@ def process_one(name, html_path, history, dry_run=False):
             # resumable byte upload: local file straight to IG, no URL needed
             published["instagram"] = publish_meta.publish_instagram_reel_file(final, cap)
         published["facebook"] = publish_meta.publish_facebook_video(final, meta)
-        history["posted"][name] = {"video": final, "music": music_name, **published}
+        import datetime as _dt
+        history["posted"][name] = {"video": final, "music": music_name,
+                                   "timestamp": _dt.datetime.now(
+                                       _dt.timezone.utc).isoformat(),
+                                   **published}
         history["music_uses"][music_name] = history.get("music_uses", {}).get(music_name, 0) + 1
         save_history(history)
     else:
@@ -90,6 +97,20 @@ def main():
     history = load_history()
     svc = drive_fetch._service()
     new_designs = drive_fetch.fetch_new_html(svc, history)
+    if not new_designs and history.get("posted"):
+        # recirculation: everything posted at least once, re-run the
+        # least-recently posted design so the channel never goes silent
+        posted = history["posted"]
+        oldest = sorted(posted, key=lambda n: (posted[n].get("timestamp", ""), n))[0]
+        dest = os.path.join(config.HTML_DIR, oldest)
+        if os.path.exists(dest):
+            os.remove(dest)
+        for f in drive_fetch.list_children(svc, config.DRIVE_HTML_FOLDER_ID):
+            if f["name"] == oldest:
+                drive_fetch.download(svc, f["id"], dest)
+                new_designs = [(oldest, dest)]
+                print(f"ENGINE: recirculating {oldest}")
+                break
     if not new_designs:
         print("ENGINE: nothing new to publish")
         return 0

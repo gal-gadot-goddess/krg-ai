@@ -1,0 +1,4 @@
+playwright>=1.40
+google-api-python-client>=2.100
+google-auth>=2.25
+requests>=2.31

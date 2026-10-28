@@ -1,0 +1,9 @@
+.work/
+output/
+frames/
+*.mp4
+*.png
+.tmp_music/
+__pycache__/
+*.pyc
+.venv/

@@ -1,22 +1,28 @@
-"""Metadata: title, description, hashtags for coding-game reels.
+"""Metadata: SEO titles, descriptions, hashtags for game reels.
 
 Reads the game name from the HTML file itself when possible:
   1. <title> tag inside the HTML
   2. <meta name="description"> / og:title hints
   3. First <h1> on the page
-  4. window.* hints (window.TITLE, window.GAME_TITLE, window.DURATION aside)
+  4. window.* hints (window.TITLE, window.GAME_TITLE, ...)
   5. Fallback: prettified file name (01-neon-runner.html -> Neon Runner)
 
 Then guesses the game kind (runner, platformer, puzzle, ...) from the
-file name + HTML text so the title/description sound like a coding video.
-Output is identical on every platform.
+file name + HTML text. Gaming-first language throughout: no tech-stack
+words, written for search and clicks. Output is identical on every platform.
 """
 import os
 import re
 
 import config
 
-HASHTAGS = ["#coding", "#gamedev", "#html5", "#javascript", "#kreggsai", "#reels"]
+
+def _brand_tag():
+    return "#" + re.sub(r"[^a-z0-9]", "", config.BRAND.lower())
+
+
+HASHTAGS = ["#browsergames", "#indiegame", "#gameplay",
+            "#gaming", "#reels"]
 
 # (keyword, label) pairs checked against filename + html text
 GENRE_HINTS = [
@@ -84,8 +90,8 @@ def extract_inner_title(html_text):
     m = re.search(r"<title[^>]*>(.*?)</title>", html_text, re.I | re.S)
     if m:
         t = re.sub(r"\s+", " ", m.group(1)).strip()
-        t = re.sub(r"\s*[|\-–—:]\s*(reel|short|shorts|video|gameplay)\s*$", "", t, flags=re.I)
-        t = re.sub(r"\s*[|\-–—:]\s*reel.*$", "", t, flags=re.I)
+        t = re.sub(r"\s*[|\-_\u2013\u2014:]\s*(reel|short|shorts|video|gameplay)\s*$", "", t, flags=re.I)
+        t = re.sub(r"\s*[|\-_\u2013\u2014:]\s*reel.*$", "", t, flags=re.I)
         if t:
             return t
     m = re.search(
@@ -142,28 +148,27 @@ def build(filename, music_name, html_path=None):
     html_text = _read_html(html_path)
     name = game_name(filename, html_path)
     genre = guess_genre(filename, html_text)
-    title = f"I Coded {name} ({genre}) in Pure HTML | {config.BRAND}"
+    title = f"{name} - The Browser Game You Can't Stop Playing | {config.BRAND}"
     title = title[:100]
     description = (
-        f"I coded {name} ({genre}) in pure HTML/CSS/JS.\n"
-        f"{config.TAGLINE}\n\n"
-        f"Original game rendered live in code, recorded as a reel.\n"
-        f"Music: {music_name}\n\n"
-        "New coding game every day. Follow for the full collection."
+        f"{name} ({genre}) is the most addictive browser game you have seen today.\n"
+        f"Stop scrolling and watch the full gameplay, steal the high-score tricks, "
+        f"and come back tomorrow - a brand-new game drops every single day.\n\n"
+        f"New game daily. Follow {config.BRAND} so you never miss a drop."
     )
     tags = [
         name.lower(),
         genre.lower(),
-        "coding",
-        "game dev",
-        "html5 game",
+        "browser games",
+        "indie game",
+        "gameplay",
         config.BRAND.lower(),
     ]
     return {
         "title": title,
         "description": description,
         "tags": tags,
-        "hashtags": " ".join(HASHTAGS),
+        "hashtags": " ".join(HASHTAGS + [_brand_tag()]),
         "game": name,
         "genre": genre,
     }

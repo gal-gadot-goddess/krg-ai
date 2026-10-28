@@ -6,7 +6,7 @@ credentials come from secrets. No secrets are ever written to disk.
 import os
 
 BRAND = "KREGGSAI"
-TAGLINE = "I build games with code."
+TAGLINE = "A new game every day."
 
 # Drive (IDs or env overrides; HTML folder is created by the owner later)
 DRIVE_HTML_FOLDER_ID = os.environ.get("DRIVE_HTML_FOLDER_ID", "")

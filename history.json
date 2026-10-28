@@ -1,4 +1,15 @@
 {
-  "posted": {},
-  "music_uses": {}
+  "posted": {
+    "20-temple-of-sun.html": {
+      "video": "output/20-temple-of-sun-reel.mp4",
+      "music": "001 - No Turning Back.mp3",
+      "timestamp": "2026-10-28T17:10:32+00:00",
+      "youtube": null,
+      "instagram": "18342674107257019",
+      "facebook": "2310528002849742"
+    }
+  },
+  "music_uses": {
+    "001 - No Turning Back.mp3": 1
+  }
 }

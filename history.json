@@ -1,9 +1,18 @@
 {
   "music_uses": {
     "001 - No Turning Back.mp3": 1,
-    "002 - No Turning Back.mp3": 1
+    "002 - No Turning Back.mp3": 1,
+    "003 - Stay for the Afterglow.mp3": 1
   },
   "posted": {
+    "18-starfall-salvage.html": {
+      "facebook": "1432891039031542",
+      "instagram": "18133133248779431",
+      "music": "003 - Stay for the Afterglow.mp3",
+      "timestamp": "2026-10-29T15:58:31.287352+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/18-starfall-salvage-reel.mp4",
+      "youtube": null
+    },
     "19-tightrope-tempest.html": {
       "facebook": "1123934363567360",
       "instagram": "18137365957636261",

@@ -2,9 +2,18 @@
   "music_uses": {
     "001 - No Turning Back.mp3": 1,
     "002 - No Turning Back.mp3": 1,
-    "003 - Stay for the Afterglow.mp3": 1
+    "003 - Stay for the Afterglow.mp3": 1,
+    "004 - Run Until the Sunrise.mp3": 1
   },
   "posted": {
+    "17-glacier-pick.html": {
+      "facebook": "1149905347597242",
+      "instagram": "18085049087339104",
+      "music": "004 - Run Until the Sunrise.mp3",
+      "timestamp": "2026-10-30T15:42:34.259987+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/17-glacier-pick-reel.mp4",
+      "youtube": null
+    },
     "18-starfall-salvage.html": {
       "facebook": "1432891039031542",
       "instagram": "18133133248779431",

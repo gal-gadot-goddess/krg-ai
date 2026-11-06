@@ -9,7 +9,8 @@
     "007 - When We Were Strangers.mp3": 1,
     "008 - When We Were Strangers.mp3": 1,
     "009 - Chasing the Last Light.mp3": 1,
-    "010 - Chasing the Last Light.mp3": 1
+    "010 - Chasing the Last Light.mp3": 1,
+    "011 - Gravity.mp3": 1
   },
   "posted": {
     "07-gearfall.html": {
@@ -18,6 +19,14 @@
       "music": "010 - Chasing the Last Light.mp3",
       "timestamp": "2026-11-05T17:13:28.104415+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/07-gearfall-reel.mp4",
+      "youtube": null
+    },
+    "08-cinder-climb.html": {
+      "facebook": "1698264665220011",
+      "instagram": "18082687307743677",
+      "music": "011 - Gravity.mp3",
+      "timestamp": "2026-11-06T16:40:11.682733+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/08-cinder-climb-reel.mp4",
       "youtube": null
     },
     "10-dune-drifter.html": {

@@ -18,7 +18,8 @@
     "016 - We Were Here.mp3": 1,
     "017 - Electric Between Us.mp3": 1,
     "018 - Electric Between Us.mp3": 1,
-    "019 - One More Night Alive.mp3": 1
+    "019 - One More Night Alive.mp3": 1,
+    "020 - One More Night Alive.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -27,6 +28,14 @@
       "music": "016 - We Were Here.mp3",
       "timestamp": "2026-11-11T17:02:50.565733+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/01-skyhook-reel.mp4",
+      "youtube": null
+    },
+    "01-tidecaller.html": {
+      "facebook": "2661623864308565",
+      "instagram": "17985663579124310",
+      "music": "020 - One More Night Alive.mp3",
+      "timestamp": "2026-11-15T16:10:13.098852+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/01-tidecaller-reel.mp4",
       "youtube": null
     },
     "02-fernway.html": {

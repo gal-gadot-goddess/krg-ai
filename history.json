@@ -19,7 +19,8 @@
     "017 - Electric Between Us.mp3": 1,
     "018 - Electric Between Us.mp3": 1,
     "019 - One More Night Alive.mp3": 1,
-    "020 - One More Night Alive.mp3": 1
+    "020 - One More Night Alive.mp3": 1,
+    "021 - Lights Fade Slowly.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -175,11 +176,11 @@
       "youtube": null
     },
     "20-temple-of-sun.html": {
-      "facebook": "2310528002849742",
-      "instagram": "18342674107257019",
-      "music": "001 - No Turning Back.mp3",
-      "timestamp": "2026-10-28T17:10:32+00:00",
-      "video": "output/20-temple-of-sun-reel.mp4",
+      "facebook": "959936503865652",
+      "instagram": "18120201643804253",
+      "music": "021 - Lights Fade Slowly.mp3",
+      "timestamp": "2026-11-16T19:28:32.325885+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/20-temple-of-sun-reel.mp4",
       "youtube": null
     }
   }

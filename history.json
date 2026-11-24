@@ -22,7 +22,8 @@
     "020 - One More Night Alive.mp3": 1,
     "021 - Lights Fade Slowly.mp3": 1,
     "022 - Lights Fade Slowly.mp3": 1,
-    "023 - Runaway Hearts.mp3": 1
+    "023 - Runaway Hearts.mp3": 1,
+    "024 - Runaway Hearts.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -151,6 +152,14 @@
       "music": "005 - Stay for the Afterglow.mp3",
       "timestamp": "2026-10-31T15:11:58.812002+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/16-sporefall-reel.mp4",
+      "youtube": null
+    },
+    "17-chrome-drift.html": {
+      "facebook": "3275824292620740",
+      "instagram": "17942495598403353",
+      "music": "024 - Runaway Hearts.mp3",
+      "timestamp": "2026-11-24T20:02:11.648164+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/17-chrome-drift-reel.mp4",
       "youtube": null
     },
     "17-glacier-pick.html": {

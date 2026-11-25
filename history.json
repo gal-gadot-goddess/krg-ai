@@ -23,7 +23,8 @@
     "021 - Lights Fade Slowly.mp3": 1,
     "022 - Lights Fade Slowly.mp3": 1,
     "023 - Runaway Hearts.mp3": 1,
-    "024 - Runaway Hearts.mp3": 1
+    "024 - Runaway Hearts.mp3": 1,
+    "025 - After Hours.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -152,6 +153,14 @@
       "music": "005 - Stay for the Afterglow.mp3",
       "timestamp": "2026-10-31T15:11:58.812002+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/16-sporefall-reel.mp4",
+      "youtube": null
+    },
+    "16-vinefall.html": {
+      "facebook": "1190580600157153",
+      "instagram": "18417087577093318",
+      "music": "025 - After Hours.mp3",
+      "timestamp": "2026-11-25T19:02:04.550835+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/16-vinefall-reel.mp4",
       "youtube": null
     },
     "17-chrome-drift.html": {

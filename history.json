@@ -24,7 +24,8 @@
     "022 - Lights Fade Slowly.mp3": 1,
     "023 - Runaway Hearts.mp3": 1,
     "024 - Runaway Hearts.mp3": 1,
-    "025 - After Hours.mp3": 1
+    "025 - After Hours.mp3": 1,
+    "026 - After Hours.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -129,6 +130,14 @@
       "music": "008 - When We Were Strangers.mp3",
       "timestamp": "2026-11-03T16:56:34.908575+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/12-gravity-foundry-reel.mp4",
+      "youtube": null
+    },
+    "14-abysslight.html": {
+      "facebook": "1695801428814404",
+      "instagram": "18321731206304768",
+      "music": "026 - After Hours.mp3",
+      "timestamp": "2026-11-26T18:54:06.632222+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/14-abysslight-reel.mp4",
       "youtube": null
     },
     "14-tidebreaker.html": {

@@ -25,7 +25,8 @@
     "023 - Runaway Hearts.mp3": 1,
     "024 - Runaway Hearts.mp3": 1,
     "025 - After Hours.mp3": 1,
-    "026 - After Hours.mp3": 1
+    "026 - After Hours.mp3": 1,
+    "027 - We Don't Have to Say Goodbye.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -130,6 +131,14 @@
       "music": "008 - When We Were Strangers.mp3",
       "timestamp": "2026-11-03T16:56:34.908575+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/12-gravity-foundry-reel.mp4",
+      "youtube": null
+    },
+    "13-iron-mesa.html": {
+      "facebook": null,
+      "instagram": null,
+      "music": "027 - We Don't Have to Say Goodbye.mp3",
+      "timestamp": "2026-11-27T18:44:57.225351+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/13-iron-mesa-reel.mp4",
       "youtube": null
     },
     "14-abysslight.html": {

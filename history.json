@@ -26,7 +26,8 @@
     "024 - Runaway Hearts.mp3": 1,
     "025 - After Hours.mp3": 1,
     "026 - After Hours.mp3": 1,
-    "027 - We Don't Have to Say Goodbye.mp3": 1
+    "027 - We Don't Have to Say Goodbye.mp3": 1,
+    "028 - We Don't Have to Say Goodbye.mp3": 1
   },
   "posted": {
     "01-skyhook.html": {
@@ -107,6 +108,14 @@
       "music": "011 - Gravity.mp3",
       "timestamp": "2026-11-06T16:40:11.682733+00:00",
       "video": "/home/runner/work/krg-ai/krg-ai/output/08-cinder-climb-reel.mp4",
+      "youtube": null
+    },
+    "08-skyfire.html": {
+      "facebook": null,
+      "instagram": null,
+      "music": "028 - We Don't Have to Say Goodbye.mp3",
+      "timestamp": "2026-11-28T17:25:50.917850+00:00",
+      "video": "/home/runner/work/krg-ai/krg-ai/output/08-skyfire-reel.mp4",
       "youtube": null
     },
     "09-wraithwood.html": {
